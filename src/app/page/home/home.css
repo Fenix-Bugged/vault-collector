@@ -1,0 +1,91 @@
+.main-container {
+  background-color: #121212; /* Fondo oscuro */
+  color: white;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #dd0031; /* Rojo Angular */
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #dd0031;
+  box-shadow: 0 10px 20px rgba(221, 0, 49, 0.2);
+}
+
+.img-container {
+  background: #252525;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-info h3 { margin: 0 0 10px; }
+.card-info p { color: #aaa; font-size: 0.9rem; }
+
+.btn {
+  background: #dd0031;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer {
+  background: #0a0a0a;
+  color: #888;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 500px;
+}
+
+.footer-content h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-content strong {
+  color: #dd0031;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+
+<div class="main-container">
+  <h1 class="title">Bóveda de Coleccionables</h1>
+
+  <section id="pokemon" class="section">
+    <h2><i class="pokeball-icon"></i> Cartas Pokémon</h2>
+    <div class="cards-grid">
+      <div class="card" *ngFor="let item of pokemons">
+        <div class="img-container">
+          <img [src]="item.imagen" [alt]="item.nombre">
+        </div>
+        <div class="card-info">
+          <h3>{{ item.nombre }}</h3>
+          <p>{{ item.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funkos" class="section">
+    <h2>Funkos Pop!</h2>
+    <div class="cards-grid">
+      <div class="card" *ngFor="let item of funkos">
+        <div class="img-container">
+          <img [src]="item.imagen" [alt]="item.nombre">
+        </div>
+        <div class="card-info">
+          <h3>{{ item.nombre }}</h3>
+          <p>{{ item.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mangas" class="section">
+    <h2>Biblioteca de Mangas</h2>
+    <div class="cards-grid">
+      <div class="card" *ngFor="let item of mangas">
+        <div class="img-container">
+          <img [src]="item.imagen" [alt]="item.nombre">
+        </div>
+        <div class="card-info">
+          <h3>{{ item.nombre }}</h3>
+          <p>{{ item.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer id="footer" class="footer-section">
+  <div class="footer-content">
+    <h3>¿Quieres intercambiar algo?</h3>
+    <p>Contacto: <strong>cpapumisterioso@coleccionista.com</strong></p>
+    <p>© 2026 Vault Collector - wajajaja</p>
+  </div>
+</footer>

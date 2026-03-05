@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 60px 0;
+  min-height: 80vh; /* Para que cada sección ocupe buen espacio */
+}
+
+.navbar {
+  position: fixed; /* Para que siempre esté arriba al bajar */
+  top: 0;
+  width: 100%;
+  background: rgba(30, 30, 30, 0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #dd0031;
+}
