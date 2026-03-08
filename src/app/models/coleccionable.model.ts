@@ -2,6 +2,7 @@ export interface Coleccionable {
   nombre: string;
   imagen: string;
   descripcion: string;
+  categoria?: string;
 }
 
 import { Injectable } from '@angular/core';

@@ -20,9 +20,8 @@ export class HomeComponent implements OnInit {
   constructor(private _service: ColeccionableService) {}
 
   ngOnInit() {
-    // 3. Llenamos las listas usando el método que creamos en el servicio
-    this.pokemons = this._service.obtenerPorCategoria('pokemon');
-    this.funkos = this._service.obtenerPorCategoria('funkos');
-    this.mangas = this._service.obtenerPorCategoria('mangas');
-  }
+  this.pokemons = this._service.obtenerPorCategoria('pokemon');
+  this.funkos = this._service.obtenerPorCategoria('funkos');
+  this.mangas = this._service.obtenerPorCategoria('mangas');
+}
 }
